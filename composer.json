@@ -1,0 +1,32 @@
+{
+    "name": "riktamtech/zf2-error-handler",
+    "description": "Error handling in ZF2 framework using Whoops",
+    "version": "1.0.0",
+    "type": "module",
+    "license": "MIT",
+    "tags": [
+        "zend framework",
+        "zf2",
+        "whoops"
+    ],
+    "authors": [
+        {
+            "name": "Venugopal Thotakura",
+            "homepage": "http://twitter.com/venugopalt"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.*",
+        "filp/whoops": "1.*",
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "zf2-whoops": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
