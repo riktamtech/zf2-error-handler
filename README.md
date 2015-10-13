@@ -5,7 +5,7 @@ Installation
 ------------
 1) Add module to your application
 ```bash
-composer require riktamtech/zf2-error-handler
+composer require "riktamtech/zf2-error-handler:dev-master"
 ```
 
 2) Enable it in your application.config.php file.
