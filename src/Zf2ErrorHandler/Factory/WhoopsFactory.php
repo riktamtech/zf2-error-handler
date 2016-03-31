@@ -24,7 +24,7 @@ class WhoopsFactory implements FactoryInterface
 
         $whoops = new \Zf2ErrorHandler\Whoops\Whoops();
         $whoops->initFromConfig($zf2ErrorHandlerConfig);
-        $whoops->setRenderer($serviceLocator->get('viewmanager')->getRenderer());
+        $whoops->setRenderer($serviceLocator->get('viewrenderer'));
 
         $jsonHandler = !empty($zf2ErrorHandlerConfig['json_response_handler']['handler_class']) ? $zf2ErrorHandlerConfig['json_response_handler']['handler_class'] : 'Zf2ErrorHandler\Whoops\JsonResponseHandler';
         $whoops->setJsonHandler($serviceLocator->get($jsonHandler));
