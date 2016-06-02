@@ -74,6 +74,7 @@ class JsonResponseHandler extends BaseJsonResponseHandler
         $response['error']['code'] = $this->getException()->getCode();
 
         if (\Whoops\Util\Misc::canSendHeaders()) {
+            http_response_code($response['error']['code']);
             header('Content-Type: application/json');
         }
 

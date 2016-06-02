@@ -112,6 +112,7 @@ class Whoops
         }
 
         if ($this->jsonHandlerConfig['display']) {
+            $this->run->sendHttpCode(null);
             $this->setupJsonResponseHandler();
         }
 
